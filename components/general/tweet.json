@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_general_tweets",
+  "info": {
+    "name": "tweet",
+    "icon": "dove",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tweetUrl": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "author": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "default": "Please provide a short description of the tweet."
+    }
+  }
+}

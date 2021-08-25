@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_home_posts",
+  "info": {
+    "name": "post",
+    "icon": "copy",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "text": {
+      "type": "richtext",
+      "required": true
+    },
+    "thumbnail": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "blurb": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "community_pages",
+  "info": {
+    "name": "community",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "memes": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "leaderboard": {
+      "type": "string"
+    },
+    "games": {
+      "type": "string"
+    },
+    "links": {
+      "type": "string"
+    }
+  }
+}

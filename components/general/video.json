@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_general_videos",
+  "info": {
+    "name": "video",
+    "icon": "file-video",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "youtubeUrl": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text",
+      "required": false,
+      "private": true,
+      "default": "Please provide a description of the video media or URL."
+    },
+    "vidMedia": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
