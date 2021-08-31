@@ -17,4 +17,5 @@ This will be the strapi that provides content data via API requests to the Club 
 9. Once strapi is up, manage the project at http://localhost:1337/admin
 
 # Heroku Deployment
-[See this guide](https://strapi.io/documentation/developer-docs/latest/setup-deployment-guides/deployment/hosting-guides/heroku.html)
+Assuming that all the setup work is done, all you really need to do is commit your changes after modifying the project in the admin console. Then run this command to push the commits to the git repo for the heroku deployment: `git push heroku HEAD:main`<br>
+See [this guide](https://strapi.io/documentation/developer-docs/latest/setup-deployment-guides/deployment/hosting-guides/heroku.html) for details.
