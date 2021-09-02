@@ -16,16 +16,6 @@
       "type": "richtext",
       "required": true
     },
-    "thumbnail": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": true,
-      "pluginOptions": {}
-    },
     "cover": {
       "model": "file",
       "via": "related",
@@ -41,6 +31,9 @@
     "blurb": {
       "type": "text",
       "required": true
+    },
+    "create_date": {
+      "type": "date"
     }
   }
 }
