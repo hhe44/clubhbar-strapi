@@ -1,5 +1,5 @@
-# Club Hbar Strapi
-This will be the strapi that provides content data via API requests to the Club Hbar site.
+# clubhbar-strapi
+This strapi app acts as the headless CMS for the clubhbar site. The application is currently deployed on heroku with cloudinary for media storage.
 
 # Local Setup (Windows)
 1. Install Postgresql [here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads), select the latest Windows x86-64 installer
@@ -17,5 +17,5 @@ This will be the strapi that provides content data via API requests to the Club 
 9. Once strapi is up, manage the project at http://localhost:1337/admin
 
 # Heroku Deployment
-Assuming that all the setup work is done, all you really need to do is commit your changes after modifying the project in the admin console. Then run this command to push the commits to the git repo for the heroku deployment: `git push heroku HEAD:main`<br>
-See [this guide](https://strapi.io/documentation/developer-docs/latest/setup-deployment-guides/deployment/hosting-guides/heroku.html) for details.
+Deployments are automatic and triggered upon pushes to the main branch.<br><br>
+See [this guide](https://strapi.io/documentation/developer-docs/latest/setup-deployment-guides/deployment/hosting-guides/heroku.html) for more details.
