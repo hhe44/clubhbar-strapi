@@ -1,19 +1,30 @@
 {
-  "collectionName": "components_home_posts",
+  "kind": "collectionType",
+  "collectionName": "posts",
   "info": {
-    "name": "post",
-    "icon": "copy",
+    "name": "Post",
     "description": ""
   },
-  "options": {},
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
   "attributes": {
     "title": {
       "type": "string",
       "required": true,
       "unique": true
     },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
     "text": {
       "type": "richtext",
+      "default": "You can use markdown and HTML tags to format the text, try it!",
       "required": true
     },
     "cover": {
@@ -29,11 +40,7 @@
       "pluginOptions": {}
     },
     "blurb": {
-      "type": "text",
-      "required": true
-    },
-    "create_date": {
-      "type": "date"
+      "type": "richtext"
     }
   }
 }

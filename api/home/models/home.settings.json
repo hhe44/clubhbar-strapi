@@ -12,13 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "posts": {
-      "type": "component",
-      "repeatable": true,
-      "component": "general.post",
-      "min": 3,
-      "required": true
-    },
     "welcomeVideo": {
       "type": "component",
       "repeatable": false,

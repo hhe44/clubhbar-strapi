@@ -12,33 +12,12 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "featuredNews": {
-      "type": "component",
-      "repeatable": true,
-      "component": "general.post",
-      "min": 3,
-      "required": true
-    },
-    "announcements": {
-      "type": "component",
-      "repeatable": true,
-      "component": "general.post",
-      "required": true,
-      "min": 1
-    },
     "tweets": {
       "type": "component",
       "repeatable": true,
       "component": "general.tweet",
       "required": true,
       "min": 1
-    },
-    "articles": {
-      "type": "component",
-      "repeatable": true,
-      "component": "general.post",
-      "min": 1,
-      "required": true
     }
   }
 }
