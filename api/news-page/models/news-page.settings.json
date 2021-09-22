@@ -12,12 +12,29 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "featuredNews": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.content",
+      "required": true
+    },
+    "announcements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.content",
+      "required": true
+    },
     "tweets": {
       "type": "component",
       "repeatable": true,
       "component": "general.tweet",
-      "required": true,
-      "min": 1
+      "required": true
+    },
+    "articles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.content",
+      "required": true
     }
   }
 }

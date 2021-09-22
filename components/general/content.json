@@ -1,16 +1,32 @@
 {
   "collectionName": "components_general_contents",
   "info": {
-    "name": "Content",
+    "name": "newsContent",
     "icon": "columns",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "videoContent": {
-      "type": "component",
-      "repeatable": true,
-      "component": "general.video"
+    "thumbnail": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "contentUrl": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   }
 }
