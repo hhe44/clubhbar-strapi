@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "thumbnail": {
+    "cover": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -16,7 +16,7 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": true,
+      "required": false,
       "pluginOptions": {}
     },
     "url": {
