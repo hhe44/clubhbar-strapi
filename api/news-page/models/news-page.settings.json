@@ -12,29 +12,27 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "featuredNews": {
-      "type": "component",
-      "repeatable": true,
-      "component": "general.content",
-      "required": true
-    },
-    "announcements": {
-      "type": "component",
-      "repeatable": true,
-      "component": "general.content",
-      "required": true
-    },
     "tweets": {
       "type": "component",
       "repeatable": true,
       "component": "general.tweet",
-      "required": true
+      "required": true,
+      "min": 1
     },
     "articles": {
       "type": "component",
       "repeatable": true,
       "component": "general.content",
-      "required": true
+      "required": true,
+      "min": 1
+    },
+    "featured": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.content",
+      "max": 3,
+      "required": true,
+      "min": 1
     }
   }
 }
